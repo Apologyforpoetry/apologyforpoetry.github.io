@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IndexBIRtest</title>
+<style type="text/css">
+	body{
+		background:url(bg2.png)
+	}
+	
+/*	#formStyling {
+		background: #F9F9F9;
+		margin: 120px auto 0 20px;
+		width: 500px;
+	}
+*/	
+	.formLayout{
+		width: 500px;
+		height: 800px;
+		// background: #74816e;
+		// background-color:rgba(87,103,88,0.8);
+		// margin: 0 auto;	
+		margin-top: 150px;
+	}
+	
+	form {
+		margin: 0 auto 0 20px;
+	}
+
+	label {		
+		float: left;
+		width: 150px;
+		margin-top: 10px;
+		clear: left;
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color:#FFFFFF;
+	}
+	
+	input, select, textarea {
+		margin-top: 10px;
+	}
+	
+/*	#theSubmit {
+		margin-left: 150px;
+		background-color:#00A618;
+	}
+*/
+
+	.btn-submit{
+		margin-left: 150px;
+		height: 45px;
+		width: 100px;
+		color:#FFFFFF;
+		background-color:rgba(65,148,44,1.00);
+		border:none;
+	}
+		
+	 input:focus::-webkit-input-placeholder {
+    opacity: 0;
+	}
+	
+	textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+	}
+
+</style>
+</head>
+
+<body>
+<div class="formLayout">
+<div id="formStyling">
+<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+	<input type=hidden name="oid" value="00D58000000awdh">
+	<input type=hidden name="retURL" value="http://www.bir.org">
+	
+    <div>
+	<label for="first_name">First Name</label>
+    <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="First name"/>
+	</div> 
+    
+    <div>   
+    <label for="last_name">Last Name</label>
+    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Last name"/>
+    </div>
+    
+    <div>
+    <label for="email">Email</label>
+    <input  id="email" maxlength="80" name="email" size="20" type="text" placeholder="name@email.com"/>
+    </div>
+    
+    <div>
+    <label for="company">Company</label>
+    <input  id="company" maxlength="40" name="company" size="20" type="text" placeholder="Company name"/>
+    </div>
+    
+    <div>
+    <label for="Company_VAT_Info">Company VAT Info</label>
+    <input  id="00N58000006Mk8p" maxlength="100" name="00N58000006Mk8p" size="20" type="text" placeholder="Company VAT info"/>
+    </div>
+    
+    <div>
+    <label for="country">Country</label>
+    <input  id="country" maxlength="40" name="country" size="20" type="text" placeholder="Country"/>
+    </div>
+    
+    <div>
+    <label for="Language">Language</label>
+    <input  id="00N58000006Mk28" maxlength="30" name="00N58000006Mk28" size="20" type="text" placeholder="Language"/>
+    </div>
+    
+    <div>
+    <label for="city">City</label>
+    <input  id="city" maxlength="40" name="city" size="20" type="text" placeholder="City" />
+	</div>
+    
+    <div>
+	<label for="zip">Zip</label>
+    <input  id="zip" maxlength="20" name="zip" size="20" type="text" placeholder="ZIP"/>
+	</div>
+    
+    <div>
+	<label for="state">State/Province</label>
+    <input  id="state" maxlength="20" name="state" size="20" type="text" placeholder="State"/>
+	</div>
+    
+    <div>
+	<label for="phone">Phone</label>
+    <input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Phone"/>
+	</div>
+
+	<div>
+	<label for="mobile">Mobile</label>
+    <input  id="mobile" maxlength="40" name="mobile" size="20" type="text" placeholder="Mobile"/>
+    </div>
+    
+    <div>
+	<label for="fax">Fax</label>
+    <input  id="fax" maxlength="40" name="fax" size="20" type="text" placeholder="Fax"/>
+    </div>
+    
+    <div>
+    <label for="Activities">Activities</label>
+    <select  id="00N58000006Mk6Z" name="00N58000006Mk6Z" title="Activities">
+    	<option value="">--None--</option>
+        <option value="Manufacturer">Manufacturer</option>
+		<option value="Trader">Trader</option>
+		<option value="Consumer">Consumer</option>
+	</select>
+    </div>
+    
+    <div>
+    <label for="Category">Category</label>
+    <select  id="00N58000006Mk8G" name="00N58000006Mk8G" title="Category">
+    	<option value="">--None--</option>
+        <option value="Ordinary">Ordinary</option>
+		<option value="Gold">Gold</option>
+	</select>
+    </div>
+    
+    <div>
+    <label for="Main Interest">Main Interest</label>
+    <select  id="00N58000006Mk2N" name="00N58000006Mk2N" title="Main Interest">
+    	<option value="">--None--</option>
+        <option value="Ferrous">Ferrous</option>
+		<option value="Paper">Paper</option>
+		<option value="Textiles">Textiles</option>
+	</select>
+    </div>
+    
+    <div>
+    <label for="Subinterest">Subinterest</label>
+    <select  id="00N58000006Mk2w" multiple="multiple" name="00N58000006Mk2w" title="Subinterest">
+    	<option value="Subinterest 1">Subinterest 1</option>
+		<option value="Subinterest 2">Subinterest 2</option>
+		<option value="Subinterest 3">Subinterest 3</option>
+		<option value="Subinterest 4">Subinterest 4</option>
+		<option value="Subinterest 5">Subinterest 5</option>
+		<option value="Subinterest 6">Subinterest 6</option>
+	</select>
+    </div>
+    
+    <div>
+    <label for="ISO">ISO</label>
+    <select  id="00N58000006Mk81" name="00N58000006Mk81" title="ISO">
+    	<option value="">--None--</option>
+    	<option value="13.030.01">13.030.01</option>
+		<option value="13.030.10">13.030.10</option>
+		<option value="13.030.20">13.030.20</option>
+		<option value="13.030.30">13.030.30</option>
+		<option value="13.030.40">13.030.40</option>
+		<option value="13.030.50">13.030.50</option>
+		<option value="13.030.99">13.030.99</option>
+	</select>
+    </div>
+    
+    <div>
+    <label for="References">References</label>
+    <textarea  id="00N58000006Mk8f" name="00N58000006Mk8f" rows="3" type="text" wrap="soft" placeholder="Enter all references here"></textarea>
+	</div>
+    
+    <div>
+	<label for="Notes">Notes</label>
+    <textarea  id="00N58000006Mk94" name="00N58000006Mk94" rows="3" type="text" wrap="soft" placeholder="Enter any aditional information here"></textarea>
+    
+	</div>
+    
+    <div id="theSubmit">
+	<input type="submit" name="submit" value="Send" class="btn-submit">
+	</div>
+
+</div>    
+</div>    
+</form>
+</body>
+</html>
